@@ -1,0 +1,18 @@
+/* regula Falsi......
+
+    1. read x1,x2, epsilon, delta=0.003
+    2. Set i=1
+    3. if f(x1)* f(x2)> 0
+    4. read: Assumption wrong
+    5. do
+    6. if abs(f (x1)- f(x2)<delta)
+    7. Read: Slope is too small
+    8. xn= (x1 f(x2) * x2 f(x1)) / (f(x2)-f(x1))
+    9. fn=f(xn)
+    10. if f(xn)* f(x1)<0
+    11. x2=xn
+    12. else
+    13. x1=xn
+    14. while (fabs(x2-x1)> epsilon)
+    15. end
+*/

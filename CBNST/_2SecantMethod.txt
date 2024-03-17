@@ -1,0 +1,12 @@
+read x1,x2, epsilon
+read n ; value of iteration for checking convergence
+for i=0 to n
+x3=((x3* f(x2))-(x2*f(x)))/(f(x2)-f(x1))
+f3=f(x3)
+if((x2-x1)/x2)<epsilon || f(x2)==0
+exit with value of x3
+x1=x2
+f1=f(x2)
+x2=x3
+f2=f(x3)
+print: root does nor exist in given iteration.
